@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Asteroids</title>
+    <style></style>
+</head>
+
+<style>
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+    
+    .bg {
+        /* The image used */
+        background-image: url("space02.jpeg");
+        
+        /* Full height */
+        height: 100%; 
+        
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .canvas {
+        padding: 0;
+        margin: auto;
+        display: block;
+        width: 700px;
+        height: 500px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+</style>
+
+<body>
+    <div class="bg">
+        <div class="canvas">
+            <canvas id="gameCanvas" width="700" height="500" style="border:3px solid #d6d6d6;"></canvas>
+        </div>
+    </div>
+    
+    <script src="config.js"></script>
+    <script src="music.js"></script>
+    <script src="sound.js"></script>
+    <script src="bonus.js"></script>
+    <script src="laser.js"></script>
+    <script src="ship.js"></script>
+    <script src="asteroid.js"></script>
+    <script src="game.js"></script>
+
+</body>
+
+</html>
